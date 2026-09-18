@@ -42,7 +42,7 @@ gerente = Gerente("matheus delacoleta", "0228922", 1000, 10000000)
 desenvolvedor = Desenvolvedor("Aiden Pearce", "123321", 10700, "Hacker")
 
 
-gerente.__salario_base = -400
+gerente.__salario_base = -4300
 
 print("Salário base do gerente:", gerente.get_salario_base())
 
