@@ -4,7 +4,6 @@ class Veiculo:
         self.__placa = placa
         self.__valor_diaria = valor_diaria
 
-    # Getters
     def get_modelo(self):
         return self.__modelo
 
@@ -14,7 +13,6 @@ class Veiculo:
     def get_valor_diaria(self):
         return self.__valor_diaria
 
-    # Setters
     def set_modelo(self, modelo):
         if modelo.strip() == "":
             raise ValueError("Informe o modelo do veículo.")
@@ -70,7 +68,7 @@ veiculos = []
 
 def cadastrar_carro():
     try:
-        print("\n--- CADASTRO DE CARRO ---")
+        print("CADASTRO DE CARRO")
 
         modelo = input("Modelo: ")
         placa = input("Placa: ")
@@ -92,7 +90,7 @@ def cadastrar_carro():
 
 def cadastrar_moto():
     try:
-        print("\n--- CADASTRO DE MOTO ---")
+        print("CADASTRO DE MOTO")
 
         modelo = input("Modelo: ")
         placa = input("Placa: ")
@@ -168,15 +166,12 @@ def calcular_aluguel():
 
 
 while True:
-    print("\n==============================")
-    print("       GESTÃO DE FROTA")
-    print("==============================")
+    print("GESTÃO DE FROTA")
     print("1 - Cadastrar carro")
     print("2 - Cadastrar moto")
     print("3 - Listar veículos")
     print("4 - Calcular aluguel")
     print("0 - Sair")
-    print("==============================")
 
     try:
         opcao = int(input("Escolha uma opção: "))
